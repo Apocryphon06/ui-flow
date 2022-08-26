@@ -4,9 +4,7 @@ import "../App.css";
 
 const Brand = () => {
   return (
-    <div>
-      <img className="logo" src={logo} alt="Eden"></img>
-    </div>
+    <img className="logo" src={logo} alt="Eden"></img>
   );
 };
 
