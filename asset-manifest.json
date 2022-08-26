@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ui-flow/static/css/main.7bb9ebc7.css",
-    "main.js": "/ui-flow/static/js/main.48ec6aeb.js",
+    "main.css": "/ui-flow/static/css/main.ba371ea4.css",
+    "main.js": "/ui-flow/static/js/main.2ed29152.js",
     "static/media/Inter-Light.ttf": "/ui-flow/static/media/Inter-Light.eec8664621fec98efb37.ttf",
     "static/media/logo.svg": "/ui-flow/static/media/logo.76d4c2297119d5580a9320ea31c90e0c.svg",
     "static/media/team.svg": "/ui-flow/static/media/team.c4c3612f2ac8a7e0527032e832d999e8.svg",
     "static/media/tick.svg": "/ui-flow/static/media/tick.ae36881e839aba0f7f8de486ed72c940.svg",
     "index.html": "/ui-flow/index.html",
     "static/media/user.svg": "/ui-flow/static/media/user.7509ad1178c4c8fbd1697b21f85fe425.svg",
-    "main.7bb9ebc7.css.map": "/ui-flow/static/css/main.7bb9ebc7.css.map",
-    "main.48ec6aeb.js.map": "/ui-flow/static/js/main.48ec6aeb.js.map"
+    "main.ba371ea4.css.map": "/ui-flow/static/css/main.ba371ea4.css.map",
+    "main.2ed29152.js.map": "/ui-flow/static/js/main.2ed29152.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bb9ebc7.css",
-    "static/js/main.48ec6aeb.js"
+    "static/css/main.ba371ea4.css",
+    "static/js/main.2ed29152.js"
   ]
 }
