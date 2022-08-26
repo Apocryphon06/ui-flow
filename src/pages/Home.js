@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useContext } from "react";
+import { PathContext } from "../context/PathContext";
 
 const Home = () => {
+  const [pname, setPname] = useContext(PathContext);
   return (
     <div>
       <h1 className="display-6">Welcome! First things first...</h1>
@@ -27,7 +30,7 @@ const Home = () => {
               />
             </Form.Group>
             <br></br>
-            <Button variant="secondary" className="btn" type="submit">
+            <Button onClick={()=>setPname("/workspace")} variant="secondary" className="btn" type="submit">
               Create Workspace
             </Button>
           </Form>

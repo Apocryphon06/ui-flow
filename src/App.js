@@ -1,17 +1,16 @@
 import React from "react";
-import Home from "./pages/Home";
 import Brand from "./components/Brand";
-import Finish from "./pages/Finish";
-import Usage from "./pages/Usage";
-import Workspace from "./pages/Workspace";
-import MyCard from "./components/MyCard";
+import { PathContextProvider } from "./context/PathContext";
+import RenderPages from "./components/RenderPages";
 
 const App = () => {
   return (
-    <div className="App">
-      <Brand />
-      <Usage/>
-    </div>
+    <PathContextProvider>
+      <div className="App">
+        <Brand />
+        <RenderPages />
+      </div>
+    </PathContextProvider>
   );
 };
 

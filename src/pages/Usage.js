@@ -2,10 +2,14 @@ import React from "react";
 import "../App.css";
 import user from "../assets/user.svg";
 import team from "../assets/team.svg";
+import { useContext } from "react";
+import { PathContext } from "../context/PathContext";
 
 import Button from "react-bootstrap/Button";
 
 const Usage = () => {
+  // eslint-disable-next-line
+  const [pname, setPname] = useContext(PathContext);
   return (
     <div>
       <h1 className="display-6">How are you planning to use Eden?</h1>
@@ -32,7 +36,7 @@ const Usage = () => {
       </div>
 
       <br></br>
-      <Button variant="secondary" className="btn" type="submit">
+      <Button onClick={()=>setPname('/finish')} variant="secondary" className="btn" type="submit">
         Create Workspace
       </Button>
     </div>

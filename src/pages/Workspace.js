@@ -2,8 +2,12 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { InputGroup } from "react-bootstrap";
+import { useContext } from "react";
+import { PathContext } from "../context/PathContext";
 
 const Workspace = () => {
+  // eslint-disable-next-line
+  const [pname, setPname] = useContext(PathContext);
   return (
     <div>
       <h1 className="display-6">Let's set up a home for all your work</h1>
@@ -32,7 +36,12 @@ const Workspace = () => {
               />
             </InputGroup>
             <br></br>
-            <Button variant="secondary" className="btn" type="submit">
+            <Button
+              onClick={() => setPname("/usage")}
+              variant="secondary"
+              className="btn"
+              type="submit"
+            >
               Create Workspace
             </Button>
           </Form>
