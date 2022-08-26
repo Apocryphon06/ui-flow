@@ -20,12 +20,18 @@
   border: none;
   padding: 5px;
   background-color: #5a4ad1;
+  color:#b3aee3
 }
 .inp{
   width: 350px;
 }
 .btn:hover {
   background-color: #b3aee3;
+  color:#5a4ad1
+}
+
+.color{
+  background-color: #5a4ad1;
 }
 
 .mycard:hover{
@@ -66,5 +72,5 @@
 
 .area{
   margin: auto;
-  width: 450px;
+  width: 350px;
 }
