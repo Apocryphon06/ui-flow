@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import user from "../assets/user.svg";
 import team from "../assets/team.svg";
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { PathContext } from "../context/PathContext";
 
@@ -11,7 +12,9 @@ const Usage = () => {
   // eslint-disable-next-line
   const [pname, setPname] = useContext(PathContext);
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+      exit={{opacity:0}}
+    >
       <h1 className="display-6">How are you planning to use Eden?</h1>
       <p>We'll streamline your setup experience accordingly.</p>
 
@@ -39,7 +42,7 @@ const Usage = () => {
       <Button onClick={()=>setPname('/finish')} variant="secondary" className="btn" type="submit">
         Create Workspace
       </Button>
-    </div>
+    </motion.div>
   );
 };
 

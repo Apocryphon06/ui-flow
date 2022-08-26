@@ -7,6 +7,7 @@ import Usage from "../pages/Usage";
 import Finish from "../pages/Finish";
 
 const RenderPages = () => {
+  // eslint-disable-next-line
   const [pname, setPname] = useContext(PathContext);
   const myFunction = () => {
     if (pname === "/home") return <Home />;

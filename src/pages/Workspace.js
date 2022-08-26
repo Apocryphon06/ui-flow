@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { motion } from "framer-motion";
 import { InputGroup } from "react-bootstrap";
 import { useContext } from "react";
 import { PathContext } from "../context/PathContext";
@@ -9,7 +10,9 @@ const Workspace = () => {
   // eslint-disable-next-line
   const [pname, setPname] = useContext(PathContext);
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+      exit={{opacity:0}}
+    >
       <h1 className="display-6">Let's set up a home for all your work</h1>
       <p>You can always create another workspace later.</p>
       <center className="justify-text-left">
@@ -47,7 +50,7 @@ const Workspace = () => {
           </Form>
         </div>
       </center>
-    </div>
+    </motion.div>
   );
 };
 
