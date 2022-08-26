@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  margin-top: 50px;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.tick {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 350px;
+  border: none;
+  padding: 5px;
+  background-color: #5a4ad1;
+}
+.btn:hover {
+  background-color: #b3aee3;
+}
+
+.mycard:hover{
+  border: 1px solid #5a4ad1;
+}
+
+@media only screen and (min-width: 1224px) {
+  .btn {
+    width: 400px;
+  }
+  .inp {
+    width: 400px;
+  }
+
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .btn {
+    width: 300px;
+  }
+  .inp {
+    width: 300px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user{
+  width: 40px;
+  height: 40px;
+}
+.text-inside{
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.area{
+  margin: auto;
+  width: 450px;
 }
