@@ -10,7 +10,6 @@ const App = () => {
     <PathContextProvider>
       <div className="App">
         <Brand />
-
         <RenderPages />
       </div>
     </PathContextProvider>
