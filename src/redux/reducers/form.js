@@ -1,6 +1,6 @@
 let initial_state = [
   {
-    fullName: "",
+    fullName: "John Doe",
     displayName: "",
     workspaceName: "",
     workspaceURL: "",
